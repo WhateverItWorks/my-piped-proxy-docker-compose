@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '127.0.0.1:6666:8080'
+      - '127.0.0.1:8091:8080'
     restart: 'always'
     security_opt:
       - no-new-privileges:true
