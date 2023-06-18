@@ -1,22 +1,13 @@
 version: '3.7'
 
 services:
-  pipedproxy:
-    container_name: 'pipedproxy'
-    hostname: 'pipedproxy'
-    user: 65534:65534
-    read_only: true
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - '127.0.0.1:8091:8080'
-    restart: 'always'
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
-    networks:
-     - pipedproxy
+    ytproxy:
+        image: '1337kavin/ytproxy:latest'
+        restart: always
+        user: '33:33'
+        volumes:
+            - '/var/run/ytproxy/:/app/socket'
+        networks:
+            host: {}
 networks:
-  pipedproxy:
+    host: {}
