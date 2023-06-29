@@ -3,10 +3,14 @@ version: '3.7'
 services:
     ytproxy:
         image: '1337kavin/ytproxy:latest'
+        container_name: ytproxy
+        hostname: ytproxy
         restart: always
         user: '33:33'
         volumes:
             - '/var/run/ytproxy/:/app/socket'
+        ports:
+            - '127.0.0.1:7174:8080'
         networks:
             host: {}
 networks:
