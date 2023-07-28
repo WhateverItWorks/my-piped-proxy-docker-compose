@@ -1,6 +1,6 @@
 # piped-proxy
 
-A proxy for Piped & Hyperpipe written in Rust, meant to superseed [http3-ytproxy](https://github.com/WhateverItWorks/my-http3-ytproxy-docker-compose).
+A proxy for Piped & Hyperpipe written in Rust.
 
 ### Renovate Bot
 ```
