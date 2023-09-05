@@ -2,6 +2,9 @@ version: '3.7'
 
 services:
     ytproxy:
+        #build:
+           #context: .
+           #dockerfile: Dockerfile
         image: '1337kavin/ytproxy:latest'
         container_name: ytproxy
         hostname: ytproxy
